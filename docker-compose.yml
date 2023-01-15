@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cloudcustomers.api:
+    image: ${DOCKER_REGISTRY-}cloudcustomersapi
+    build:
+      context: .
+      dockerfile: CloudCustomers.API/Dockerfile
